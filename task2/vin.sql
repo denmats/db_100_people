@@ -1,0 +1,86 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.4
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Mar 18, 2018 at 08:19 PM
+-- Server version: 10.1.28-MariaDB
+-- PHP Version: 7.1.11
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `hw1`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `vin`
+--
+
+CREATE TABLE `vin` (
+  `id_vin` int(11) NOT NULL,
+  `vin` varchar(17) COLLATE utf8_polish_ci NOT NULL,
+  `nr_ser` varchar(6) COLLATE utf8_polish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
+
+--
+-- Dumping data for table `vin`
+--
+
+INSERT INTO `vin` (`id_vin`, `vin`, `nr_ser`) VALUES
+(1, 'JM3ER293490222369', '222369'),
+(2, 'SALME1D48CA365300', '365300'),
+(3, '1C4BJWKGXDL508578', '508578'),
+(4, '3VWRA69M74M033915', '033915'),
+(5, 'JH4DB1550NS000306', '000306'),
+(6, '2T1KR32EX3C158977', '158977'),
+(7, 'WDBNG75J32A225892', '225892'),
+(8, '3C8FY68B72T322831', '322831'),
+(9, '5TEWN72N63Z275910', '275910'),
+(10, '2CNBJ134146900067', '900067'),
+(11, '1G1BU51H2HX113345', '113345'),
+(12, '1B3HB48B67D562726', '562726'),
+(13, 'JH4DB1540LS020608', '020608'),
+(14, '1GKDT13W6P2533357', '533357'),
+(15, '5FNRL38489B006926', '006926'),
+(16, '3TMMU4FN8CM049190', '049190'),
+(17, 'JN1AY1AP7BM521083', '521083'),
+(18, 'YS3ED48E5Y3070016', '070016'),
+(19, 'JH4KA3250HC004235', '004235'),
+(20, 'WP0CA29972S650104', '650104');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `vin`
+--
+ALTER TABLE `vin`
+  ADD PRIMARY KEY (`id_vin`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `vin`
+--
+ALTER TABLE `vin`
+  MODIFY `id_vin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
